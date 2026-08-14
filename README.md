@@ -1,0 +1,1 @@
+# equipesenac2026
