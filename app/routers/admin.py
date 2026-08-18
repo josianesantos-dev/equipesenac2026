@@ -16,7 +16,7 @@ def admin_area(user=Depends(get_current_user)):
     if user["role"] != "admin":
        
         raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
+            status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Acesso não permitido",
         )
 
